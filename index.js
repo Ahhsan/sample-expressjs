@@ -3,7 +3,7 @@ const app = express()
 const port = process.env.PORT || 3000
 
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/', (req, res) => res.send('Default app running'));
 
 app.get('/check', (request, response) => {
     response.json({ Status: 'yesss' });
